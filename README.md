@@ -97,22 +97,25 @@ Scikit-learn for regression and preprocessing
 
 SciPy for statistical plots.
 
+## Conclusion
+
+The project demonstrates how regression analysis can be used for predicting house prices. Multiple regression provides better predictive accuracy than using income alone. Proper data cleaning, outlier removal, and assumption validation make the model reliable.
+
+
 ## 📌 How to Run
 **1. Clone this repository:**
-```bash
-git clone https://github.com/swetha0121/California-Housing-Price-Data-Analysis.git my_project
 **2.Install dependencies:**
+**3.Run the Python script:**
+Check outputs and plots in the plots/ folder
+```bash
+
+git clone https://github.com/swetha0121/California-Housing-Price-Data-Analysis.git my_project
 
 pip install -r requirements.txt
 
 cd House-Price-Prediction
 
-**3.Run the Python script:**
-Check outputs and plots in the plots/ folder
 python house_price_model.py
 
 
 
-## Conclusion
-
-The project demonstrates how regression analysis can be used for predicting house prices. Multiple regression provides better predictive accuracy than using income alone. Proper data cleaning, outlier removal, and assumption validation make the model reliable.
