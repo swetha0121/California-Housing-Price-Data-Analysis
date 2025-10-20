@@ -91,11 +91,16 @@ This project focuses on predicting house prices in California using regression m
 
 ## Tools Used
 
-Python, Pandas, NumPy, Matplotlib, Seaborn
+Python 3.10, Pandas, NumPy, Matplotlib, Seaborn
 
 Scikit-learn for regression and preprocessing
 
 SciPy for statistical plots.
+
+## 📌 How to Run
+1. Clone this repository:
+```bash
+git clone https://github.com/swetha0121/California-Housing-Price-Data-Analysis
 
 ## Conclusion
 
