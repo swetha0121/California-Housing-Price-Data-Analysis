@@ -92,13 +92,18 @@ This project focuses on predicting house prices in California using regression m
 
 ## 📈 Visualization Samples
 
-![Histogram of Price](Plots/Histogram of price.png)
+### Histogram of Price
+<a href= "Plots/Histogram of price.png">Histogram of Price</a>
 
 
 ### Scatter: Income vs Price
-![Scatter Income Price]<a href= "Plots/Scatterplot of income vs price.png">image</a>
+<a href= "Plots/Scatterplot of income vs price.png">Scatter Income Price</a>
+
 ### Correlation Heatmap
-![Correlation Heatmap](plots/correlation_heatmap.png)
+<a href= "Plots/Correlation heatmap.png">Correlation Heatmap</a>
+
+### Boxplot of income & rooms
+<a href= "Plots/Boxplot of income & rooms.png">Boxplot of income & rooms</a>
 
 ## Tools Used
 
