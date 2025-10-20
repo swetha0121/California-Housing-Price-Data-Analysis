@@ -1,0 +1,170 @@
+[Running] python -u "c:\Users\DELL\Downloads\House-price-prediction\Housing_price_analysis.py"
+Showing first 5 rows:
+    Income   Age     Rooms  Bedrooms  ...  Occupancy  Latitude  Longitude  Price
+0  8.3252  41.0  6.984127  1.023810  ...   2.555556     37.88    -122.23  4.526
+1  8.3014  21.0  6.238137  0.971880  ...   2.109842     37.86    -122.22  3.585
+2  7.2574  52.0  8.288136  1.073446  ...   2.802260     37.85    -122.24  3.521
+3  5.6431  52.0  5.817352  1.073059  ...   2.547945     37.85    -122.25  3.413
+4  3.8462  52.0  6.281853  1.081081  ...   2.181467     37.85    -122.25  3.422
+
+[5 rows x 9 columns]
+Dataset shape(rows, columns): (20640, 9)
+Missing values:
+ Income        0
+Age           0
+Rooms         0
+Bedrooms      0
+Population    0
+Occupancy     0
+Latitude      0
+Longitude     0
+Price         0
+dtype: int64
+Descriptive statistics:
+               Income           Age  ...     Longitude         Price
+count   20640.000000  20640.000000  ...  20640.000000  20640.000000
+mean        3.870671     28.639486  ...   -119.569704      2.068558
+std         1.899822     12.585558  ...      2.003532      1.153956
+min         0.499900      1.000000  ...   -124.350000      0.149990
+25%         2.563400     18.000000  ...   -121.800000      1.196000
+50%         3.534800     29.000000  ...   -118.490000      1.797000
+75%         4.743250     37.000000  ...   -118.010000      2.647250
+max        15.000100     52.000000  ...   -114.310000      5.000010
+median      3.534800     29.000000  ...   -118.490000      1.797000
+
+[9 rows x 9 columns]
+Correlation of all features:
+               Income       Age     Rooms  ...  Latitude  Longitude     Price
+Income      1.000000 -0.119034  0.326895  ... -0.079809  -0.015176  0.688075
+Age        -0.119034  1.000000 -0.153277  ...  0.011173  -0.108197  0.105623
+Rooms       0.326895 -0.153277  1.000000  ...  0.106389  -0.027540  0.151948
+Bedrooms   -0.062040 -0.077747  0.847621  ...  0.069721   0.013344 -0.046701
+Population  0.004834 -0.296244 -0.072213  ... -0.108785   0.099773 -0.024650
+Occupancy   0.018766  0.013191 -0.004852  ...  0.002366   0.002476 -0.023737
+Latitude   -0.079809  0.011173  0.106389  ...  1.000000  -0.924664 -0.144160
+Longitude  -0.015176 -0.108197 -0.027540  ... -0.924664   1.000000 -0.045967
+Price       0.688075  0.105623  0.151948  ... -0.144160  -0.045967  1.000000
+
+[9 rows x 9 columns]
+
+EDA interpretation hints:
+- Check skew of Price from histogram.
+- Look for positive correlation Income <-> Price in scatter.
+- Use correlation matrix to see likely strong predictors (abs(corr) high).
+Scale numeric features:
+          Income       Age     Rooms  ...  Occupancy  Latitude  Longitude
+0      2.344766  0.982143  0.628559  ...  -0.049597  1.052548  -1.327835
+1      2.332238 -0.607019  0.327041  ...  -0.092512  1.043185  -1.322844
+2      1.782699  1.856182  1.155620  ...  -0.025843  1.038503  -1.332827
+3      0.932968  1.856182  0.156966  ...  -0.050329  1.038503  -1.337818
+4     -0.012881  1.856182  0.344711  ...  -0.085616  1.038503  -1.337818
+...         ...       ...       ...  ...        ...       ...        ...
+20635 -1.216128 -0.289187 -0.155023  ...  -0.049110  1.801647  -0.758826
+20636 -0.691593 -0.845393  0.276881  ...   0.005021  1.806329  -0.818722
+20637 -1.142593 -0.924851 -0.090318  ...  -0.071735  1.778237  -0.823713
+20638 -1.054583 -0.845393 -0.040211  ...  -0.091225  1.778237  -0.873626
+20639 -0.780129 -1.004309 -0.070443  ...  -0.043682  1.750146  -0.833696
+
+[20640 rows x 8 columns]
+IQR: Income          2.179850
+Age            19.000000
+Rooms           1.611665
+Bedrooms        0.093447
+Population    938.000000
+Occupancy       0.852520
+Latitude        3.780000
+Longitude       3.790000
+Price           1.451250
+dtype: float64
+Outliers in each column:
+ Income         681
+Age              0
+Rooms          511
+Bedrooms      1424
+Population    1196
+Occupancy      711
+Latitude         0
+Longitude        0
+Price         1071
+dtype: int64
+columns without outliers: (20640, 9)
+Data shape after removing outliers: (16312, 9)
+Random Training set shape: (13049, 8)
+Random Test set shape: (3263, 8)
+
+Stratified Split Train shape: (13049, 8)
+Stratified Split Test shape: (3263, 8)
+
+Random Train Income Distribution:
+ 3    0.373209
+2    0.321710
+4    0.190283
+5    0.078320
+1    0.036478
+Name: Income, dtype: float64
+Stratified Train Income Distribution:
+ 3    0.370143
+2    0.327458
+4    0.188290
+5    0.076864
+1    0.037244
+Name: Income, dtype: float64
+
+Random Test Income Distribution:
+ 3    0.357953
+2    0.350598
+4    0.180202
+5    0.071100
+1    0.040147
+Name: Income, dtype: float64
+Stratified Test Income Distribution:
+ 3    0.370211
+2    0.327613
+4    0.188170
+5    0.076923
+1    0.037082
+Name: Income, dtype: float64
+
+Simple regression: Intercept = 0.4237026305220659 Coeff(Income) = 0.4108802321107205
+
+Multiple regression coefficients:
+Income : 0.4511543134792312
+Age : 0.01068463948206302
+Rooms : -0.12733005613722465
+Bedrooms : 1.2705888963218919
+Population : 7.929361850421424e-05
+Occupancy : -0.36861858305807743
+Latitude : -0.39313191051434454
+Longitude : -0.39301458308713766
+Intercept: -32.748593775766125
+Metrics for simple regression:
+
+MAE: 0.5477309127052635
+MSE: 0.5044936520269285
+RMSE: 0.710277165638125
+R�: 0.4228559507198152
+
+Metrics for multi regression:
+
+MAE: 0.4235527429735981
+MSE: 0.3165222770544477
+RMSE: 0.5626031257062546
+R�: 0.6378964374821559
+
+On average, our predictions are off by 0.42.
+The model explains 63.79% of the variation in house prices.
+
+ 1. Which variables impact house price the most?
+ Usually Income has the strongest effect, followed by Rooms and Location.
+
+2. Did assumptions hold true?
+ Mostly yes, but small deviations may exist (e.g., slight non-normality in residuals
+
+3. Which model was better?
+ Multiple Regression performed better than Simple Regression (higher R�, lower errors
+
+4. Are errors acceptable?
+Yes, because RMSE/MAE are reasonably small compared to the price range
+
+[Done] exited with code=0 in 337.097 seconds
+
