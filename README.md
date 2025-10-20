@@ -92,11 +92,11 @@ This project focuses on predicting house prices in California using regression m
 
 ## 📈 Visualization Samples
 
-**Histogram of Price:** <a href= "https://github.com/swetha0121/California-Housing-Price-Data-Analysis/blob/main/Plots/Histogram%20of%20price.png?raw=true">image</a>
+![Histogram of Price](Plots/Histogram of price.png)
 
 
 ### Scatter: Income vs Price
-![Scatter Income Price](plots/scatter_income_price.png)
+![Scatter Income Price]([plots/scatter_income_price.png](https://github.com/swetha0121/California-Housing-Price-Data-Analysis/blob/2e0875d566e915cb7e0555c32c557ee762b12b7c/Plots/Scatterplot%20of%20income%20vs%20price.png))
 
 ### Correlation Heatmap
 ![Correlation Heatmap](plots/correlation_heatmap.png)
