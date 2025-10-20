@@ -32,93 +32,64 @@ This project focuses on predicting house prices in California using regression m
 ## Steps Performed
 
 ### Data Loading & Cleaning
-
 - Checked missing values and duplicates.
-
 - Cleaned data for analysis.
 
 ### Exploratory Data Analysis (EDA)
-
 - Descriptive statistics.
-
 - Histogram of Price, Scatter plot of Income vs Price.
-
 - Correlation heatmap to identify important features.
 
 ### Preprocessing & Outlier Handling
-
 - Scaled numeric features.
-
 - Detected and removed extreme outliers.
 
 ### Train-Test Split
-
 - Random 80-20 split.
-
 - Stratified split based on Income bins to preserve distribution.
 
 ### Regression Modeling
-
 - Simple Regression: Price ~ Income
-
 - Multiple Regression: Price ~ all features
-
 - Extracted coefficients and regression equations.
 
 ### Assumption Checks
-
 - Linearity, independence, homoscedasticity, and residual normality.
 
 ### Model Evaluation
-
 - Calculated MAE, MSE, RMSE, and R² for both models.
-
 - Multiple regression performed better.
 
 ### Final Analysis
-
 - Most influential features: Income, Rooms, Location
-
 - Errors acceptable, assumptions mostly satisfied
 
 ## Key Findings
 
 - Income is the strongest predictor of house prices.
-
 - Multiple regression explains more variation in prices than simple regression.
-
 - Stratified splitting ensures fair representation of income categories in train/test sets.
 
 
 ## 📈 Visualization Samples
 
-### Histogram of Price
-<a href= "Plots/Histogram of price.png">Histogram of Price</a>
+- **Histogram of Price:** <a href= "Plots/Histogram of price.png">Image</a>
 
+- **Scatter: Income vs Price:** <a href= "Plots/Scatterplot of income vs price.png">Image</a>
 
-### Scatter: Income vs Price
-<a href= "Plots/Scatterplot of income vs price.png">Scatter Income Price</a>
+- **Correlation Heatmap:** <a href= "Plots/Correlation heatmap.png">Image</a>
 
-### Correlation Heatmap
-<a href= "Plots/Correlation heatmap.png">Correlation Heatmap</a>
+- **Boxplot of income & rooms:** <a href= "Plots/Boxplot of income & rooms.png">Image</a>
 
-### Boxplot of income & rooms
-<a href= "Plots/Boxplot of income & rooms.png">Boxplot of income & rooms</a>
+- **Predicted Vs Actual(Multiple Regression):** <a href= "Plots/Predicted Vs Actual(MR).png">Image</a>
 
-### Predicted Vs Actual(Multiple Regression)
-<a href= "Plots/Predicted Vs Actual(MR).png">Predicted Vs Actual(MR)</a>
+- **Residuals vs order:** <a href= "Plots/Residuals vs order.png">Image</a>
 
-### Residuals vs order
-<a href= "Plots/Residuals vs order.png">Residuals vs order</a>
+- **Predicted vs residuals:** <a href= "Plots/Predicted vs residuals.png">Image</a>
 
-## Predicted vs residuals
-<a href= "Plots/Predicted vs residuals.png">Predicted vs residuals</a>
+- **Histogram of residuals:** <a href= "Plots/Histogram of residuals.png">Image</a>
 
-## Histogram of residuals
-<a href= "Plots/Histogram of residuals.png">Histogram of residuals</a>
-
-## Q-Qplot of residuals
-<a href= "[Plots/Predicted Vs Actual(MR).png](https://github.com/swetha0121/California-Housing-Price-Data-Analysis/blob/main/Plots/Q-Qplot%20of%20residuals.png?raw=true)">Q-Qplot of residuals</a>
+- **Q-Qplot of residuals:** <a href= "Plots/Q-Qplot of residuals.png">Image</a>
 
 ## Tools Used
 
@@ -127,6 +98,12 @@ Python 3.10, Pandas, NumPy, Matplotlib, Seaborn
 Scikit-learn for regression and preprocessing
 
 SciPy for statistical plots.
+
+## Results Summary
+
+- Model predictions are **close to actual prices** on average.  
+- Most **assumptions are satisfied**.  
+- The **multiple regression model** is more reliable for real-world predictions.
 
 ## Conclusion
 
