@@ -93,7 +93,8 @@ This project focuses on predicting house prices in California using regression m
 ## 📈 Visualization Samples
 
 ### Histogram of Price
-![Histogram of Price](Plots/histogram_price.png)
+![Histogram of Price]<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/27e414d9-aae1-4c5f-876f-9078cdb9b68b" />
+
 
 ### Scatter: Income vs Price
 ![Scatter Income Price](plots/scatter_income_price.png)
