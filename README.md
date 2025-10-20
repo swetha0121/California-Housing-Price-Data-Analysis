@@ -105,6 +105,21 @@ This project focuses on predicting house prices in California using regression m
 ### Boxplot of income & rooms
 <a href= "Plots/Boxplot of income & rooms.png">Boxplot of income & rooms</a>
 
+### Predicted Vs Actual(Multiple Regression)
+<a href= "Plots/Predicted Vs Actual(MR).png">Predicted Vs Actual(MR)</a>
+
+### Residuals vs order
+<a href= "Plots/Residuals vs order.png">Residuals vs order</a>
+
+## Predicted vs residuals
+<a href= "Plots/Predicted vs residuals.png">Predicted vs residuals</a>
+
+## Histogram of residuals
+<a href= "Plots/Histogram of residuals.png">Histogram of residuals</a>
+
+## Q-Qplot of residuals
+<a href= "[Plots/Predicted Vs Actual(MR).png](https://github.com/swetha0121/California-Housing-Price-Data-Analysis/blob/main/Plots/Q-Qplot%20of%20residuals.png?raw=true)">Q-Qplot of residuals</a>
+
 ## Tools Used
 
 Python 3.10, Pandas, NumPy, Matplotlib, Seaborn
