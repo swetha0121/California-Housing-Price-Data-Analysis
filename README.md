@@ -89,6 +89,18 @@ This project focuses on predicting house prices in California using regression m
 
 - Stratified splitting ensures fair representation of income categories in train/test sets.
 
+
+## 📈 Visualization Samples
+
+### Histogram of Price
+![Histogram of Price](Plots/histogram_price.png)
+
+### Scatter: Income vs Price
+![Scatter Income Price](plots/scatter_income_price.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](plots/correlation_heatmap.png)
+
 ## Tools Used
 
 Python 3.10, Pandas, NumPy, Matplotlib, Seaborn
