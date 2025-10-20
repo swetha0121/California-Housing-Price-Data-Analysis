@@ -98,15 +98,16 @@ Scikit-learn for regression and preprocessing
 SciPy for statistical plots.
 
 ## 📌 How to Run
-1. Clone this repository:
+**1. Clone this repository:**
 ```bash
-git clone https://github.com/swetha0121/California-Housing-Price-Data-Analysis 
-
-2.Install dependencies:
+git clone https://github.com/swetha0121/California-Housing-Price-Data-Analysis.git my_project
+**2.Install dependencies:**
 
 pip install -r requirements.txt
 
-rm -rf 3.Run the Python script:
+cd House-Price-Prediction
+
+**3.Run the Python script:**
 Check outputs and plots in the plots/ folder
 python house_price_model.py
 
